@@ -1,3 +1,68 @@
 .chessboard{
     min-width: 530px;   
 }
+
+.cell{
+    width: 100%;
+    height: 75px;
+    float: left;
+    border: 1px solid black;
+}
+
+.wrapper {
+    width: 12.5%;
+    display: inline-block;
+    position: relative;
+    /* border: 1px solid black; */
+  }
+  .wrapper:after {
+    padding-top: 100%;
+    /* 16:9 ratio */
+    display: block;
+    content: '';
+  }
+
+  .wrapper:hover{
+    opacity: 80%;
+  }
+
+  .wrapper-header {
+    width: 12.4%;
+    /* padding-top: 5%; */
+    min-height: 25px;
+    display: inline-block;
+    position: relative;
+  }
+  .wrapper-side {
+    width: 5%;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+  }
+  .main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    /* fill parent */
+    /* background-color: deepskyblue; */
+    /* let's see it! */
+    color: white;
+    /* background-image: url('/vite.svg'); */
+    /* background-image: url('https://cdn.shopify.com/s/files/1/2209/1479/products/additional_megachess-14_600x.png?v=1535653091'); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80% 80%;
+  }
+
+  .possible-move{
+    border: 4px solid darkseagreen;
+    border-radius: 10px;
+  }
+
+  .possible-cut{
+    border: 4px solid red;
+    border-radius: 10px;
+  }
+  
