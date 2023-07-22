@@ -1,9 +1,8 @@
 // Chess Record List has a list of records
-import React from "react";
-import Record from "./Record";
+// import React from "react";
 
 const RecordList = () => {
-    return <div></div>;
+  return <div></div>;
 };
 
 export default RecordList;
