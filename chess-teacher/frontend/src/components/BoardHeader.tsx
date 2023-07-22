@@ -1,6 +1,3 @@
-//  a - h letters
-// import React from "react";
-
 interface Props {
   player: number;
 }

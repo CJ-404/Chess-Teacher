@@ -1,5 +1,4 @@
 // Record Board is a Table that has two RecordLists for while player and black player respectively.
-// import React from "react";
 
 interface Props {
   onToggle: () => void;

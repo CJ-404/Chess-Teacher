@@ -1,11 +1,8 @@
-// row number square of a row.
-// import React from "react";
-
 interface Props {
   digit: number;
 }
 
-const RowNumber = ({ digit }: Props) => {
+const BoardRow = ({ digit }: Props) => {
   return (
     <div className="wrapper-side text-light d-flex justify-content-center align-items-center">
       <div>{digit}</div>
@@ -13,4 +10,4 @@ const RowNumber = ({ digit }: Props) => {
   );
 };
 
-export default RowNumber;
+export default BoardRow;

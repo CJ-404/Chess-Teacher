@@ -1,12 +1,8 @@
 //this has 8 squres in it.
-//consists of
-// row Number
-// 8 X square
-// row Number
 
 import React from "react";
 import Square from "./Square";
-import RowNumber from "./RowNumber";
+import BoardRow from "./BoardRow";
 
 interface Props {
     rowNumber: number;
@@ -59,7 +55,7 @@ const Row = ({ rowNumber, player, state, onSquareClick }: Props) => {
     return (
         <>
             <div className="d-flex justify-content-center align-items-center">
-                <RowNumber digit={rowNumber} />
+                <BoardRow digit={rowNumber} />
                 {colors.map((color, index) => {
                     return (
                         <Square
@@ -72,7 +68,7 @@ const Row = ({ rowNumber, player, state, onSquareClick }: Props) => {
                         />
                     );
                 })}
-                <RowNumber digit={rowNumber} />
+                <BoardRow digit={rowNumber} />
             </div>
         </>
     );
